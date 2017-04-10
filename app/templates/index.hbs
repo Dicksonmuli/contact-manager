@@ -1,5 +1,6 @@
+<!-- adding functionalities to make appropriate action on the route handle -->
 <ul>
   {{#each model as |admin|}}
-    {{admin-tile admin=admin}}
+    {{admin-tile admin=admin destroyAdmin="destroyAdmin"}}
   {{/each}}
 </ul>

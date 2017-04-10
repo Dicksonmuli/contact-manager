@@ -2,7 +2,7 @@ import Ember from 'ember';
 function onSignIn(googleUser) {
 	// Useful data for your client-side scripts:
 	var profile = googleUser.getBasicProfile();
-	console.log("ID: " + profile.getId()); // Don't send this directly to your server!
+	console.log("ID: " + profile.getId()); // sending  this (not directly) to your server!
 	console.log('Full Name: ' + profile.getName());
 	console.log('Given Name: ' + profile.getGivenName());
 	console.log('Family Name: ' + profile.getFamilyName());
@@ -14,5 +14,10 @@ function onSignIn(googleUser) {
 	console.log("ID Token: " + id_token);
 };
 export default Ember.Route.extend({
-
+	// actions
+	actions: {
+		onSignIn(){
+			this.transitionTo('index');
+		}
+	}
 });

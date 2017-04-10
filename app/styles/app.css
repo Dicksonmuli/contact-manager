@@ -2,6 +2,29 @@
 body{margin-top:20px;}
 .fa-fw {width: 2em;}
 
+/*top icons*/
+.fa-top{
+	color: #105fa8;
+}
+/*side dashboard*/
+#side-dashboard{
+	border: 1px solid #c7c9cc;
+	border-radius: 4px;
+	background-color: #f7f8f9;
+}
+/*admin status*/
+.status-button{
+	height: 15px;
+	weight: 15px;
+	border-radius: 30px;
+	background-color: #4ecc14;
+}
+.admin-pic{
+	height: 80px;
+	width: 60px;
+	border: 1px solid #c7c9cc;
+	margin: 1px;
+}
 /*login form styles*/
 form {
     border: 3px solid #f1f1f1;
@@ -52,4 +75,9 @@ span.psw {
 /*form header*/
 .login-header{
 	text-align: center;
+}
+
+/*main area css*/
+.main-area{
+	height: auto;
 }

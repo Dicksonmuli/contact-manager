@@ -1,1 +1,6 @@
-{{yield}}
+<!-- including the new contact button -->
+{{#if addNewAdmin}}
+  <p>Display new admin form - to be replaced with form code soon.</p>
+{{else}}
+  <button {{action 'adminFormShow'}}>New Contact</button>
+{{/if}}

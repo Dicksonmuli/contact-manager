@@ -12,5 +12,9 @@
        <label for="contact_no">Contact_no</label>
        {{input value=contact_no id="contact_no" placeholder=admin.contact_no}}
      </div>
-</form>
-</div>
+     <button {{action 'update' admin}}>Save</button>
+         </form>
+       </div>
+     {{else}}
+       <button {{action 'updateAdminForm'}}>Edit</button>
+     {{/if}}

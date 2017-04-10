@@ -1,27 +1,30 @@
 <!-- login form outline -->
-<h2 class="login-header">Login Form</h2>
+	<h2 class="login-header">Login</h2>
 
-<form action="/action_page.php">
-  <div class="imgcontainer">
-    <img src="https://secure.gravatar.com/avatar/03cebaa3f73d498546e0012ac4c18d78?size=500&default=https://www.philosophy-foundation.org/frontpage/img/avatar2.png" alt="Avatar" class="avatar">
-  </div>
+	<form>
+	   <div class="">
+	   	 <img src="https://secure.gravatar.com/avatar/03cebaa3f73d498546e0012ac4c18d78?size=500&default=https://www.philosophy-foundation.org/frontpage/img/avatar2.png" alt="Avatar" class="avatar">
+	   </div>
 
-  <div class="container">
-    <label><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
+	    <label><b>Username</b></label>
+	    <input type="text" class="form-control" placeholder="Enter Email" name="uname" required>
 
-    <label><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
+	    <label><b>Password</b></label>
+	    <input type="password" class="form-control" placeholder="Enter Password" name="psw" required>
+			<!-- login buttons -->
+			<div class="row">
+				<div class="col-md-3">
+					{{#link-to 'index' type="button" type="submit" class="btn btn-success"}}Login{{/link-to}}
+				</div>
+				<div class="g-signin2 col-md-3" data-onsuccess="onSignIn" data-theme="dark">
+			</div>
+			</div>
+			<div class="remember-me">
+				<input type="checkbox" checked="checked"> Remember me
+			</div>
 
-    <button type="submit">Login</button>
-    <input type="checkbox" checked="checked"> Remember me
-  </div>
-
-  <div class="container" style="background-color:#f1f1f1">
-    <button type="button" class="cancelbtn">Cancel</button>
-    <span class="psw">Forgot <a href="#">password?</a></span>
-  </div>
-</form>
-
-
-<div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
+	  <div style="background-color:#f1f1f1">
+	    {{#link-to 'index' type="button" class="cancelbtn btn btn-danger"}}Cancel{{/link-to}}
+	    <span class="psw">Forgot <a href="www.google.com/gmail/">password?</a></span>
+	  </div>
+	</form>

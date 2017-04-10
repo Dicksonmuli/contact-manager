@@ -65,3 +65,7 @@ span.psw {
        width: 100%;
     }
 }
+/*form header*/
+.login-header{
+	text-align: center;
+}

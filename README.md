@@ -1,17 +1,28 @@
-# contact-manager
+# Contact manager
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+## Description
 
-## Prerequisites
+Ember js app for managing contacts in an organization/ work place
 
-You will need the following things properly installed on your computer.
+## Deployment
 
-* [Git](https://git-scm.com/)
-* [Node.js](https://nodejs.org/) (with NPM)
-* [Bower](https://bower.io/)
-* [Ember CLI](https://ember-cli.com/)
-* [PhantomJS](http://phantomjs.org/)
+
+* [visit site](https://heroku.com/contact-manager) for Markdown parsing
+* [ Visit github](https://github.com/Dicksonmuli/contact-manager) repo for the awesome syntax-highlighted editor
+
+## Author
+
+* Isaiah Muli
+* Collins Mwiti
+* Alex Kinuthia
+
+## Technologies
+
+* Ember js
+* Bootstrap
+* jQuery
+* css
+
 
 ## Installation
 
@@ -20,14 +31,11 @@ You will need the following things properly installed on your computer.
 * `npm install`
 * `bower install`
 
-## Running / Development
+## Running
 
 * `ember serve`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
 
-### Code Generators
-
-Make use of the many generators for code, try `ember help generate` for more details
 
 ### Running Tests
 
@@ -39,9 +47,6 @@ Make use of the many generators for code, try `ember help generate` for more det
 * `ember build` (development)
 * `ember build --environment production` (production)
 
-### Deploying
-
-Specify what it takes to deploy your app.
 
 ## Further Reading / Useful Links
 

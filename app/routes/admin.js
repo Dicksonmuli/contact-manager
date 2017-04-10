@@ -1,26 +1,29 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
+  model() {
+    return this.store.findAll('contact');
+  },
   //creating an action on our route handler
   actions: {
-    saveAdmin3(params) {
-      var newAdmin = this.store.createRecord('admin', params);
-      newAdmin.save();
+    saveContact3(params) {
+      var newContact = this.store.createRecord('contact', params);
+      newContact.save();
       this.transitionTo('index');
     },
 
-    update(admin, params) {
+    update(contact, params) {
       Object.keys(params).forEach(function(key) {
         if (params[key] !== undefined) {
-          admin.set(key, params[key]);
+          contact.set(key, params[key]);
         }
       });
-      admin.save();
+      contact.save();
       this.transitionTo('index');
     },
 
-    destroyAdmin(admin) {
-      admin.destroyRecord();
+    destroyContact(contact) {
+      contact.destroyRecord();
       this.transitionTo('index');
     }
   }

@@ -1,7 +1,7 @@
 <!-- including the new contact button -->
 <!-- to allow one to pass a number of attributes -->
-{{#if addNewAdmin}}
-<h1>New Contact</h1>
+{{#if addNewContact}}
+<h4>New Contact</h4>
 <div>
     <form>
       <div class="form-group">
@@ -13,8 +13,9 @@
         <label for="contact_no">Contact_no</label>
         {{input value=contact_no id="contact_no"}}
       </div>
+  <button {{action 'new' contact}}>Save</button>
   </form>
 </div>
 {{else}}
-  <button {{action 'adminFormShow'}}>New Contact</button>
+  <button {{action 'contactFormShow'}}>New Contact</button>
 {{/if}}

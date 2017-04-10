@@ -1,32 +1,8 @@
-{{update-admin admin=admin update="update"}}
 <!-- enable the user to view his or her cantacts -->
-<table class="table">
-  <thead>
-    <tr>
-      <th>#</th>
-      <th>First Name</th>
-      <th>Last Name</th>
-      <th>delete and edit</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>{{admin.contact_name}}</td>
-      <td>{{admin.contact_no}}</td>
-      <td><button {{action 'delete' admin}}>Delete</button></td>
-   </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>{{admin.contact_name}}</td>
-      <td>{admin.contact_no}}</td>
-      <td><button {{action 'delete' admin}}>Delete</button></td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>{{admin.contact_name}}</td>
-      <td>{admin.contact_no}}</td>
-      <td><button {{action 'delete' admin}}>Delete</button></td>
-    </tr>
-  </tbody>
-</table>
+<tr>
+  <th scope="row"></th>
+  <td>{{contact.contact_name}}</td>
+  <td>{{contact.contact_no}}</td>
+  <td><button {{action 'delete' contact}}>Delete</button></td>
+  <td><button {{action 'update' contact}}>Update</button></td>
+</tr>

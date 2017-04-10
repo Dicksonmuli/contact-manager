@@ -1,8 +1,1 @@
-<!-- adding functionalities to make appropriate action on the route handle -->
-<ul>
-  {{#each model as |admin|}}
-    {{admin-tile admin=admin update="update" destroyAdmin="destroyAdmin"}}
-  {{/each}}
-</ul>
-<!-- save component -->
-{{new-admin saveAdmin2="saveAdmin3"}}
+{{yield}}

@@ -1,14 +1,14 @@
 import Ember from 'ember';
 import config from './config/environment';
 
+//routes
 const Router = Ember.Router.extend({
-  location: config.locationType
+  location: config.locationType,
+  rootURL: config.rootURL
 });
-//adding dynamic segment to our new route's entry in the router(admin.js)
+
 Router.map(function() {
-  this.route('admin', {
-    path: '/admin/:admin_id'
-  });
+  this.route('admin');
   this.route('chat');
   this.route('contact');
   this.route('about');

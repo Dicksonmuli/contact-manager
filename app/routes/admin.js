@@ -1,8 +1,27 @@
 import Ember from 'ember';
 
-//to allow dynamic segment information from router.js
 export default Ember.Route.extend({
-  model(params) {
-    return this.store.findRecord('admin', params.admin_id);
-  },
+  //creating an action on our route handler
+  actions: {
+    saveAdmin3(params) {
+      var newAdmin = this.store.createRecord('admin', params);
+      newAdmin.save();
+      this.transitionTo('index');
+    },
+
+    update(admin, params) {
+      Object.keys(params).forEach(function(key) {
+        if (params[key] !== undefined) {
+          admin.set(key, params[key]);
+        }
+      });
+      admin.save();
+      this.transitionTo('index');
+    },
+
+    destroyAdmin(admin) {
+      admin.destroyRecord();
+      this.transitionTo('index');
+    }
+  }
 });

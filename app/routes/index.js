@@ -13,6 +13,12 @@ export default Ember.Route.extend({
       this.transitionTo('index');
     },
 
+    update(admin, params) {
+      debugger;
+      admin.save();
+      this.transitionTo('index');
+    },
+
     destroyAdmin(admin) {
       admin.destroyRecord();
       this.transitionTo('index');

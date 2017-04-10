@@ -1,5 +1,28 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
 
-{{outlet}}
+<div class="container">
+    <div class="row">
+			<!-- side dash-board -->
+        <div class="col-md-3">
+
+					<!-- nav pills -->
+            <ul class="nav nav-pills nav-stacked">
+                <li class="active">{{#link-to 'index'}}<i class="fa fa-home fa-fw"></i>Home{{/link-to}}</li>
+
+                <li>{{#link-to 'chat'}}<i class="fa fa-commenting-o fa-fw" aria-hidden="true"></i>Messages{{/link-to}}</li>
+
+                <li>{{#link-to 'admin'}}<i class="fa fa-user-o fa-fw" aria-hidden="true"></i>Admin{{/link-to}}</li>
+
+                <li>{{#link-to 'index'}}<i class="fa fa-bar-chart-o fa-fw"></i>Charts{{/link-to}}</li>
+                <li>{{#link-to 'contact'}}<i class="fa fa-map-marker fa-fw" aria-hidden="true"></i></i>Contact{{/link-to}}</li>
+                <li>{{#link-to 'index'}}<i class="fa fa-calendar fa-fw"></i>Calender{{/link-to}}</li>
+                <li>{{#link-to 'about'}}<i class="fa fa-pencil fa-fw"></i>About us{{/link-to}}></li>
+                <li>{{#link-to 'admin'}}<i class="fa fa-cogs fa-fw"></i>Settings{{/link-to}}</li>
+            </ul>
+        </div>
+        <div class="col-md-9 well">
+            Vertical admin menu<br>
+						Vertical admin menu<br>
+						{{outlet}}
+        </div>
+    </div>
+</div>

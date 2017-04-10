@@ -11,6 +11,7 @@ Router.map(function() {
   this.route('chat');
   this.route('contact');
   this.route('about');
+  this.route('login');
 });
 
 export default Router;

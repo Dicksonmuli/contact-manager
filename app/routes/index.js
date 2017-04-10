@@ -14,7 +14,11 @@ export default Ember.Route.extend({
     },
 
     update(admin, params) {
-      debugger;
+      Object.keys(params).forEach(function(key) {
+        if (params[key] !== undefined) {
+          admin.set(key, params[key]);
+        }
+      });
       admin.save();
       this.transitionTo('index');
     },

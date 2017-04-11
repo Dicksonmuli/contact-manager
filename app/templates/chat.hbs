@@ -1,7 +1,8 @@
 <div class="container">
 	<ul>
-		{{#each model.message as |message|}}
-			{{chat-tile message=message saveMessage="saveMessage" saveReply="saveReply"}}
+		{{#each model as |message|}}
+			{{chat-tile message=message saveReply="saveReply"}}
 		{{/each}}
 	</ul>
+	{{new-message saveMessage="saveMessage"}}
 </div>

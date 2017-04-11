@@ -1,7 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-	replyShowing: false;
+	replyShowing: false,
 
 	// actions
 	actions: {
@@ -11,8 +11,7 @@ export default Ember.Component.extend({
 		saveReply(){
 			var params = {
 				content: this.get('content'),
-				file: this.get('file'),
-				message: this.get('message')
+				file: this.get('file')
 			}
 			this.set('replyShowing', false)
 			this.sendAction('saveReply', message, params)

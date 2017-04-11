@@ -90,3 +90,21 @@ span.psw {
 tr .data {
   padding-left: 140px;
 }
+/*no styles on ul*/
+ul{
+	list-style-type: none;
+}
+/*box shadow*/
+.boxshadow {
+    -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0,0.5);
+    -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    padding: 10px;
+    background: white;
+}
+
+/* Make the image fit the box */
+.boxshadow img {
+    border: 1px solid #8a4419;
+    border-style: inset;
+}

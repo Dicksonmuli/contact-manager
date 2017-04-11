@@ -17,7 +17,7 @@ export default Ember.Route.extend({
 	// actions
 	actions: {
 		onSignIn(){
-			this.transitionTo('index');
+			this.transitionTo('admin');
 		}
 	}
 });

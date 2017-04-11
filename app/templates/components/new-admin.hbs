@@ -13,9 +13,9 @@
         <label for="contact_no">Contact_no</label>
         {{input value=contact_no id="contact_no"}}
       </div>
-  <button {{action 'new' contact}}>Save</button>
+  <button {{action 'saveContact1' contact}} class="btn btn-success">Save</button>
   </form>
 </div>
 {{else}}
-  <button {{action 'contactFormShow'}}>New Contact</button>
+  <button {{action 'contactFormShow'}} class="btn btn-primary">New Contact</button>
 {{/if}}

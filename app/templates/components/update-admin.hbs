@@ -10,9 +10,9 @@
       <div class="form-group">
         <label for="contact_no">Contact_no</label> {{input value=contact_no id="contact_no" placeholder=contact.contact_no}}
       </div>
-      <button {{action 'update' contact}}>Save</button>
+      <button class="btn btn-success" {{action 'update' contact}}>Save</button>
     </form>
   </div>
 {{else}}
-  <button {{action 'updateContactForm'}}>Update</button>
+  <button {{action 'updateContactForm'}} class="btn btn-primary">Update</button>
 {{/if}}

@@ -9,7 +9,7 @@ export default Ember.Route.extend({
     saveContact3(params) {
       var newContact = this.store.createRecord('contact', params);
       newContact.save();
-      this.transitionTo('index');
+      this.transitionTo('admin');
     },
 
     update(contact, params) {
@@ -19,7 +19,7 @@ export default Ember.Route.extend({
         }
       });
       contact.save();
-      this.transitionTo('index');
+      this.transitionTo('admin');
     },
 
     destroyContact(contact) {

@@ -1,8 +1,9 @@
 <!-- enable the user to view his or her cantacts -->
-<tr>
-  <th scope="row"></th>
-  <td>{{contact.contact_name}}</td>
-  <td>{{contact.contact_no}}</td>
-  <td><button {{action 'delete' contact}}>Delete</button></td>
-  <td><button {{action 'update' contact}}>Update</button></td>
-</tr>
+<th>
+  <td><b>#</b></td>
+</th>
+  <td class="data">{{contact.contact_name}}</td>
+  <td class="data">{{contact.contact_no}}</td>
+  <td class="data"><button {{action 'delete' contact}} class="btn btn-danger">Delete</button></td>
+  <td>{{update-admin contact=contact update=update}}</td>
+<!-- {{new-admin saveContact2="saveContact3"}} -->

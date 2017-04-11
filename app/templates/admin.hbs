@@ -1,22 +1,16 @@
 
 <!-- save component -->
-<table class="table">
-  <thead>
-    <tr>
-      <th>#</th>
-      <th>Contact Name</th>
-      <th>Contact Number</th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    {{#each model as |contact|}}
-      {{admin-tile contact=contact update="update" destroyContact="destroyContact"}}
-    {{/each}}
-   </tbody>
- </table>
+
+<div class="table-responsive">
+  <span class="table-header"><b>Name</b></span>
+  <span class="table-header"><b>Phone Number</b></span>
+  <table class="table table-striped">
+      {{#each model as |contact|}}
+      <tr >{{admin-tile contact=contact update="update" destroyContact="destroyContact"}}</tr>
+      {{/each}}
+   </table>
 
 
-{{update-admin contact=contact update="update"}}
+  {{new-admin saveContact2="saveContact3"}}
 
-{{new-admin saveContact2="saveContact3"}}
+</div>

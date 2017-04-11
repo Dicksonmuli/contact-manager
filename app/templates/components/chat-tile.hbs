@@ -13,11 +13,11 @@
 					{{reply.file}}
 					<form>
   				<div class="form-group">
-    				{{input type="file" id="file" value=file}}{{input value=content class="form-control" id="content" placeholder="Reply.."}}<button {{action 'save'}} class="btn">Send</button>
+    				{{input type="file" id="file" value=file}}{{input value=content class="form-control" id="content" placeholder="Reply.."}}<button {{action 'saveReply'}} class="btn">Send</button>
   				</div>
 				</form>
 				 {{else}}
-				 <span type="button" {{action 'reply'}}>Reply</span>
+				 <span type="button" {{action 'reply'}}><i class="fa fa-commenting"></i>Reply</span>
 				 {{/if}}
 	    </div>
 	  </div>

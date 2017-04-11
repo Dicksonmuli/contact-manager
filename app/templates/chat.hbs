@@ -1,1 +1,7 @@
-{{outlet}}
+<div class="container">
+	<ul>
+		{{#each model.message as |message|}}
+			{{chat-tile message=message saveMessage="saveMessage" saveReply="saveReply"}}
+		{{/each}}
+	</ul>
+</div>

@@ -1,0 +1,26 @@
+<li>
+	<div class="media">
+	    <div class="media-left">
+	      <img src="img_avatar1.png" class="media-object" style="width:60px">
+				{{message.name}}
+	    </div>
+	    <div class="media-body">
+	      <h4 class="media-heading">Left-aligned</h4>
+	      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p> <p>{{message.content}}</p>
+				 <hr>
+				 {{#if replyShowing}}
+				 	{{reply.content}}
+					{{reply.file}}
+					<form>
+  				<div class="form-group">
+    				{{input type="file" id="file" value=file}}{{input value=content class="form-control" id="content" placeholder="Reply.."}}<button {{action 'save'}} class="btn">Send</button>
+  				</div>
+				</form>
+				 {{else}}
+				 <span type="button" {{action 'reply'}}>Reply</span>
+				 {{/if}}
+	    </div>
+	  </div>
+
+
+</li>

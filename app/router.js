@@ -1,3 +1,4 @@
+
 import Ember from 'ember';
 import config from './config/environment';
 
@@ -13,7 +14,6 @@ Router.map(function() {
   this.route('contact');
   this.route('about');
   this.route('login');
-  this.route('calender');
   this.route('calendar');
 });
 

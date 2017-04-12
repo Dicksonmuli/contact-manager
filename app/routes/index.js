@@ -1,3 +1,4 @@
+
 import Ember from 'ember';
 
 //model-hook comes here

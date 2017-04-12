@@ -13,6 +13,8 @@ Router.map(function() {
   this.route('contact');
   this.route('about');
   this.route('login');
+  this.route('calender');
+  this.route('calendar');
 });
 
 export default Router;

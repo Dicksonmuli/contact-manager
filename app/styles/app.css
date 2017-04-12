@@ -1,3 +1,6 @@
+.number{
+	display: block;
+}
 
 @import url(http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css);
 body{margin-top:2px;}
@@ -84,7 +87,12 @@ span.psw {
 	height: auto;
 }
 .table-header {
-  padding-left: 150px;
+  padding-left: 180px;
+}
+/*contacts table*/
+.contacts-hr{
+	background-color: blue;
+	border: 1px solid #c7c9cc;
 }
 
 tr .data {

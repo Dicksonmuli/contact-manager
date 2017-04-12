@@ -1,27 +1,50 @@
 <li>
 	<div class="media boxshadow">
+		<div class="container-fluid">
+			<span class="right">
+				...
+			</span><hr>
+		</div>
 	    <div class="media-left">
 	      <img src="https://cdn3.iconfinder.com/data/icons/rcons-user-action/32/boy-512.png" class="media-object" style="width:50px; border-radius: 100px">
-				{{message.name}}
+				<em>{{message.name}}</em>
 	    </div>
 	    <div class="media-body">
-	      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p> <p>{{message.content}}</p>
+	       <p>{{message.content}}</p>
 				 <hr>
 				 {{#if replyShowing}}
-				 	{{#each message.reply as |reply|}}
-					{{reply.content}}
-					{{reply.file}}
+				 thsiha
+				 	{{#each message.replys as |reply|}}
+					<!-- media -->
+					<div class="row" id="border">
+						<div class="col-md-10">
+							{{reply.comment}}
+							{{reply.replyFile}}
+						</div>
+						<div class="col-md-2" >
+							<img src="https://cdn3.iconfinder.com/data/icons/rcons-user-action/32/boy-512.png" class="media-object" style="width:50px; border-radius: 100px">
+						</div>
+					</div>
 					{{/each}}
 					<form>
   				<div class="form-group">
-    				{{input type="file" id="file" value=file}}{{input value=content class="form-control" id="content" placeholder="Reply.."}}<button {{action 'saveReply'}} class="btn">Send</button>
+    				{{input type="file" id="replyFile" value=replyFile}}{{input value=comment class="form-control" id="comment" placeholder="Reply.."}}<button {{action 'saveReply'}} class="btn">Send</button>
+						<button {{action 'cancel'}} class="btn">cancel</button>
   				</div>
 				</form>
 				 {{else}}
-				 <span type="button" {{action 'reply'}}><i class="fa fa-commenting"></i>Reply</span>
+				 <div class="row">
+				 	<div class="col-md-2">
+				 		<span type="button" {{action 'reply'}} id="pointer"><i class="fa fa-comment-o"></i> Reply</span>
+				 	</div>
+					<div class="col-md-2">
+						<span type="button" id="pointer"><i class="fa fa-share" aria-hidden="true"> Share</i></span>
+					</div>
+				 </div>
+
 				 {{/if}}
 	    </div>
-	  </div>
+	  </div><br>
 
 
 </li>

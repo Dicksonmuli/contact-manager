@@ -8,13 +8,17 @@ export default Ember.Component.extend({
 		reply() {
 			this.set('replyShowing', true);
 		},
+		cancel(){
+			// this.transitionTo('message');
+			this.set('replyShowing', false)
+		},
 		saveReply(){
 			var params = {
-				content: this.get('content'),
-				file: this.get('file')
-			}
-			this.set('replyShowing', false)
-			this.sendAction('saveReply', message, params)
+				comment: this.get('comment'),
+				replyFile: this.get('replyFile') || "",
+				message: this.get('message')
+			};
+			this.sendAction('saveReply', params)
 		}
 	}
 });

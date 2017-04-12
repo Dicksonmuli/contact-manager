@@ -9,7 +9,7 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('admin');
-  this.route('chat');
+  this.route('message');
   this.route('contact');
   this.route('about');
   this.route('login');

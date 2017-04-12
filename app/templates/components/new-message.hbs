@@ -3,10 +3,10 @@
       {{input id="file" value=file type="file" placeholder="File+" style="width: 30px"}}
     <div class="row">
       <div class="col-md-1">
-        {{input id="name" placeholder="Enter Name.."}}
+        {{input value=name id="name" placeholder="Name.."}}
       </div>
       <div class="col-md-4">
-        {{input  id="content" placeholder="Post.."}}
+        {{input  value=content id="content" placeholder="Post.."}}
       </div><br>
       <div class="col-md-1">
         <button {{action 'saveMessage'}} class="btn btn-default" style="padding: 10px; margin-left: 47px; margin-top: -10px">Submit</button>

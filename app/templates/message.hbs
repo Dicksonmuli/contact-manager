@@ -1,6 +1,6 @@
-<div class="container">
+<div class="container-fluid">
 	<ul>
-		{{#each model as |message|}}
+		{{#each model.messages as |message|}}
 			{{chat-tile message=message saveReply="saveReply"}}
 		{{/each}}
 	</ul>

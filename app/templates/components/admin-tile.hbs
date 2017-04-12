@@ -2,7 +2,7 @@
 <th>
   <td><b>#</b></td>
 </th>
-  <td class="data">{{contact.contact_name}}</td>
+  <td class="data"> <button type="button" data-toggle="tooltip" data-placement="bottom">{{contact.contact_name}}</button> </td>
   <td class="data">{{contact.contact_no}}</td>
   <td class="data"><button {{action 'delete' contact}} class="btn btn-danger">Delete</button></td>
   <td>{{update-admin contact=contact update=update}}</td>

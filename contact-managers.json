@@ -14,7 +14,7 @@
     "content": "I like big computer and I cannot lie, and my other brothers cannot deny. It make me read well!"
   }],
   "replys": [{
-      "content": "Yeah!!! That's my man. Totally agree with you",
-      "file": "My file"
+      "comment": "Yeah!!! That's my man. Totally agree with you",
+      "replyFile": "My file"
   }]
 }

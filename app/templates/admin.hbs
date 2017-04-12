@@ -1,0 +1,13 @@
+<div class="table-responsive container-fluid">
+  <span class="table-header"><b>Name</b></span>
+  <span class="table-header"><b>Phone Number</b></span>
+  <table class="table table-striped">
+      {{#each model as |contact|}}
+      <tr >{{admin-tile contact=contact update="update" destroyContact="destroyContact"}}</tr>
+      {{/each}}
+   </table>
+
+
+  {{new-admin saveContact2="saveContact3"}}
+
+</div>

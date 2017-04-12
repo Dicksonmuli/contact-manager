@@ -5,8 +5,8 @@ export default Ember.Component.extend({
 	actions: {
 		saveMessage(){
 			var params = {
-				file: this.get('file'),
-				content: this.get('file'),
+				file: this.get('file') || "",
+				content: this.get('content'),
 				name: this.get('name')
 			}
 			this.sendAction('saveMessage', params)
